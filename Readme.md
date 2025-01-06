@@ -1,10 +1,10 @@
-# Tacview XML Waypoint Parser
+# Combatflite XML Waypoint Parser
 
-A Python GUI application that reads and parses waypoint data from Tacview XML files. The application displays the parsed data in a user-friendly table and allows users to copy specific columns to the clipboard for easy access and further analysis.
+A Python GUI application that reads and parses waypoint data from Combatflite XML files. The application displays the parsed data in a user-friendly table and allows users to copy specific columns to the clipboard for easy access and further analysis.
 
 ## Features
 
-- **XML Parsing**: Reads waypoint data from Tacview-generated XML files.
+- **XML Parsing**: Reads waypoint data from Combatflite-generated XML files.
 - **Data Conversion**: Converts latitude and longitude from decimal degrees to Decimal Degrees and Minutes (DDM) format.
 - **Data Cleaning**: Removes unwanted substrings (e.g., "Venom1") and formats waypoint names for clarity.
 - **User-Friendly Interface**: Utilizes Tkinter for an intuitive GUI with table views and interactive buttons.
@@ -24,8 +24,8 @@ _Add screenshots of the application here if available._
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/tacview-xml-parser.git
-   cd tacview-xml-parser
+   git clone https://github.com/yourusername/Combatflite-xml-parser.git
+   cd Combatflite-xml-parser
    ```
 
 2. **(Optional) Create a Virtual Environment**
@@ -52,7 +52,7 @@ _Add screenshots of the application here if available._
 2. **Open an XML File**
 
    - Click on the **"Open XML File"** button.
-   - Browse and select the desired Tacview XML file.
+   - Browse and select the desired Combatflite XML file.
 
 3. **View Parsed Waypoints**
 
@@ -91,7 +91,7 @@ Sets up the main GUI window, including the table view and buttons, and starts th
 
 ## Example XML Structure
 
-Ensure your Tacview XML files contain `<Waypoint>` elements structured as follows:
+Ensure your Combatflite XML files contain `<Waypoint>` elements structured as follows:
 
 ```xml
 <Waypoint>
@@ -108,16 +108,3 @@ Ensure your Tacview XML files contain `<Waypoint>` elements structured as follow
 
 - **XML Parsing Errors**: Ensure the selected XML file is correctly formatted and contains the necessary `<Waypoint>` elements.
 - **Missing Tkinter**: If you encounter issues related to Tkinter, ensure it is installed and properly configured with your Python installation.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
-
-## License
-
-_Specify your project's license here, e.g., MIT License._
-
-## Acknowledgements
-
-- [Tacview](https://www.tacview.net/) for providing the XML format used in this parser.
-- Python's [Tkinter](https://docs.python.org/3/library/tkinter.html) library for the GUI components.
